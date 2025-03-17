@@ -2,7 +2,20 @@ td{
     padding: 4px;
     height: 50px;
     width: 50px;
-    background-color: black;
+    background-color: #A62F03;
     color: #FFFFFF;
     text-align: center;
+    font-family: sans-serif, Helvetica;
+}
+td.dark{
+    background-color: #A62F03;
+}
+td.light{
+    background-color: #D96704;
+}
+td.dark:hover{
+    background-color: #BF4904;
+}
+td.light:hover{
+    background-color: #F2AF5C;
 }

@@ -3,7 +3,7 @@ var table = document.createElement("table");
 document.body.appendChild(table);
 
 var x,y;
-var letra = "`";
+var letra = "@";
 var pos;
 var isWhite = true;
 
@@ -30,13 +30,13 @@ for(x=0;x<8;x++){
         pos = String.fromCharCode(letra.charCodeAt(0) + (y+1)) + (x+1);
         var elemento = document.getElementById(pos);
         if(isWhite){
-            elemento.style.backgroundColor = "white";
+            elemento.classList.add("light");
             if(y<7){
                 isWhite = false;
             }
         }
         else{
-            elemento.style.backgroundColor = "black";
+            elemento.classList.add("dark");
             if(y<7){
                 isWhite = true;
             }
